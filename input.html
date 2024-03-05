@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(96, 96, 183);
+     
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <form onsubmit="return validatForm()">
+    <div align=center>
+        <label for="input"><h3>Enter your sympyoms</h3></label>
+        <input style="height:200px;width: 500px;" type="text" id="input" name="input" ><br><br><br><br><br>
+        <button onclick="validatForm()">Submit</button>
+    </div>
+
+</form>
+<script>
+    function validatForm()
+    {
+       
+        var symptom=document.getElementById("input").value;
+        if(symptom=="stress" || symptom=="anxiety" ||symptom=="headache" ||symptom=="depression" ||symptom=="demotivated" ||symptom=="sadness"||symptom=="unhappy" ){
+            document.write("Connect with others Look after your physical health");
+        }
+        if(symptom=="sleepiness" || symptom=="angry" ||symptom=="low appitite" ||symptom=="low energy" ){
+            document.write("Explore relaxation or wellness programs or apps, which may incorporate meditation, muscle relaxation, or breathing exercises.");
+        }
+
+        document.body.style.background="rgb(212, 181, 144)";
+    }
+</script>
+</body>
+</html>
